@@ -9,7 +9,6 @@ import {useTheme} from '@mui/material/styles';
 export default function Home() {
     const theme = useTheme();
 
-
     return (
         <main>
             <Box textAlign="center" mt={8}>
@@ -17,6 +16,7 @@ export default function Home() {
                     <Grid item xs={12} md={6}>
                         <Image
                             src={profilePic} // 이미지 경로를 여기에 입력
+                            width={400}
                             alt="개발하는 모습"
                             layout="responsive"
                         />

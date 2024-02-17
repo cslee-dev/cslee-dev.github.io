@@ -1,7 +1,8 @@
 import type {Metadata} from "next";
 import {Noto_Sans_KR} from "next/font/google";
-import "./globals.css";
 import ResponsiveAppBar from "@/components/ResponsiveAppBar";
+import {Container, CssBaseline, ThemeProvider} from "@mui/material";
+import theme from "@/theme";
 
 const inter = Noto_Sans_KR({subsets: ["latin"]});
 
@@ -14,8 +15,13 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
     return (
         <html lang="ko">
         <body className={inter.className}>
-        <ResponsiveAppBar/>
-        {children}
+        <ThemeProvider theme={theme}>
+            <Container>
+                <ResponsiveAppBar/>
+                <CssBaseline/>
+                {children}
+            </Container>
+        </ThemeProvider>
         </body>
         </html>
     );

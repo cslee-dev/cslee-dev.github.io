@@ -17,8 +17,7 @@ export default function Home() {
                         <Image
                             src={profilePic} // 이미지 경로를 여기에 입력
                             width={400}
-                            alt="개발하는 모습"
-                            layout="responsive"
+                            alt="프로필 이미지"
                         />
                     </Grid>
                     <Grid item xs={12} md={5} textAlign="left" sx={{

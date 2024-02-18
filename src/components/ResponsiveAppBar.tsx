@@ -22,13 +22,18 @@ export default function MenuAppBar() {
                             Work
                         </Button>
                         <Button sx={{color: 'black'}}>
-                            Project
+                            <Link href="https://github.com/dev-cslee" passHref legacyBehavior>
+                                <a style={{textDecoration: 'none', 'color': 'inherit'}} target="_blank">Github</a>
+                            </Link>
+                        </Button>
+                        <Button sx={{color: 'black'}}>
+                            <Link href="/" passHref legacyBehavior>
+                                <a style={{textDecoration: 'none', 'color': 'inherit'}} target="_blank">Blog</a>
+                            </Link>
                         </Button>
                     </Box>
                 </Toolbar>
-
             </AppBar>
-
         </Box>
     );
 }

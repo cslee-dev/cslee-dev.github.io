@@ -8,8 +8,8 @@ import Footer from '@/components/Footer';
 const inter = Noto_Sans_KR({subsets: ["latin"]});
 
 export const metadata: Metadata = {
-    title: "CSLEE 기술 블로그",
-    description: "CSLEE 기술 블로그에 오신걸 환영합니다.",
+    title: "이철승 | 서버 백엔드 엔지니어",
+    description: "CSLEE. 서버 백엔드 엔지니어",
 };
 
 export default function RootLayout({children,}: Readonly<{ children: React.ReactNode; }>) {

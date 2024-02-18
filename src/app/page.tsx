@@ -4,11 +4,8 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import profilePic from "../../public/profile.png";
 import {Grid} from "@mui/material";
-import {useTheme} from '@mui/material/styles';
 
 export default function Home() {
-    const theme = useTheme();
-
     return (
         <main>
             <Box textAlign="center" mt={8}>
@@ -22,7 +19,7 @@ export default function Home() {
                             />
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={5} textAlign="left" >
+                    <Grid item xs={12} md={5} textAlign="left">
                         <Typography variant="h1" gutterBottom fontWeight="700" sx={{opacity: 0.9, fontSize: '5rem'}}>
                             Hello, <br/>I’m CSLEE.
                         </Typography>
@@ -36,7 +33,6 @@ export default function Home() {
                     </Grid>
                 </Grid>
             </Box>
-
         </main>
     );
 }

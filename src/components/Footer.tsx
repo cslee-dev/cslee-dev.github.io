@@ -1,0 +1,35 @@
+import React, {FC, ReactElement} from "react";
+import {Box, Container, Grid, Typography} from "@mui/material";
+
+export const Footer: FC = (): ReactElement => {
+    return (
+        <Box
+            sx={{
+                width: "100%",
+                height: "auto",
+                backgroundColor: "primary",
+                paddingTop: "1rem",
+                paddingBottom: "1rem",
+            }}
+        >
+            <Container maxWidth="lg" sx={{marginTop:24}}>
+                <hr/>
+                <Grid container direction="column" alignItems="center">
+
+                    <Grid item xs={12}>
+                        <Typography color="black" variant="h6">
+                            Backend Developer CSLEE
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Typography color="textSecondary" variant="subtitle1">
+                            {`2024 | React | Material UI | Nextjs `}
+                        </Typography>
+                    </Grid>
+                </Grid>
+            </Container>
+        </Box>
+    );
+};
+
+export default Footer;

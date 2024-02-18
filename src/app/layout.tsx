@@ -3,6 +3,7 @@ import {Noto_Sans_KR} from "next/font/google";
 import ResponsiveAppBar from "@/components/ResponsiveAppBar";
 import {Container, CssBaseline, ThemeProvider} from "@mui/material";
 import theme from "@/theme";
+import Footer from '@/components/Footer';
 
 const inter = Noto_Sans_KR({subsets: ["latin"]});
 
@@ -21,6 +22,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
                 <CssBaseline/>
                 {children}
             </Container>
+            <Footer/>
         </ThemeProvider>
         </body>
         </html>

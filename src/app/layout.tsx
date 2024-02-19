@@ -10,6 +10,9 @@ const inter = Noto_Sans_KR({subsets: ["latin"]});
 export const metadata: Metadata = {
     title: "이철승 | 서버 백엔드 엔지니어",
     description: "CSLEE. 서버 백엔드 엔지니어",
+    verification: {
+        google: '9RxcLldAyhOs7MJBvjfB-tzdR0_wO0t522UbtXsxj4o'
+    }
 };
 
 export default function RootLayout({children,}: Readonly<{ children: React.ReactNode; }>) {
